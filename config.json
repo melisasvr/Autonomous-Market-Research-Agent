@@ -1,0 +1,125 @@
+{
+  "industry_keywords": [
+    "artificial intelligence",
+    "machine learning", 
+    "fintech",
+    "startup funding",
+    "tech innovation",
+    "digital transformation",
+    "cloud computing",
+    "cybersecurity",
+    "blockchain",
+    "venture capital"
+  ],
+  "news_api_key": "your-news-api-key-here",
+  "email_host": "smtp.gmail.com",
+  "email_port": 587,
+  "email_user": "your-email@gmail.com",
+  "email_pass": "your-gmail-app-password",
+  "report_recipients": "team@yourcompany.com",
+  "send_email_reports": false,
+  "monitoring_sources": [
+    {
+      "url": "https://openai.com/blog/rss.xml",
+      "type": "rss",
+      "company": "OpenAI",
+      "frequency": 12
+    },
+    {
+      "url": "https://blog.google/technology/ai/rss",
+      "type": "rss", 
+      "company": "Google AI",
+      "frequency": 12
+    },
+    {
+      "url": "https://www.anthropic.com/news",
+      "type": "website",
+      "company": "Anthropic",
+      "frequency": 24
+    },
+    {
+      "url": "https://blogs.microsoft.com/ai/feed/",
+      "type": "rss",
+      "company": "Microsoft AI",
+      "frequency": 12
+    },
+    {
+      "url": "https://blog.x.ai/rss",
+      "type": "rss",
+      "company": "xAI",
+      "frequency": 12
+    },
+    {
+      "url": "https://stability.ai/news",
+      "type": "website",
+      "company": "Stability AI",
+      "frequency": 24
+    },
+    {
+      "url": "https://huggingface.co/blog/feed.xml",
+      "type": "rss",
+      "company": "Hugging Face",
+      "frequency": 12
+    },
+    {
+      "url": "https://deepmind.google/discover/blog/rss.xml",
+      "type": "rss",
+      "company": "DeepMind",
+      "frequency": 12
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/feed/",
+      "type": "rss",
+      "company": "AWS ML",
+      "frequency": 24
+    },
+    {
+      "url": "https://research.facebook.com/blog/feed/",
+      "type": "rss",
+      "company": "Meta Research",
+      "frequency": 24
+    }
+  ],
+  "additional_news_sources": [
+    {
+      "url": "https://venturebeat.com/feed/",
+      "type": "rss",
+      "company": "VentureBeat",
+      "frequency": 6
+    },
+    {
+      "url": "https://techcrunch.com/category/artificial-intelligence/feed/",
+      "type": "rss", 
+      "company": "TechCrunch AI",
+      "frequency": 6
+    },
+    {
+      "url": "https://www.wired.com/feed/category/business/artificial-intelligence/latest/rss",
+      "type": "rss",
+      "company": "Wired AI",
+      "frequency": 12
+    }
+  ],
+  "report_settings": {
+    "generate_weekly": true,
+    "generate_monthly": false,
+    "include_sentiment": true,
+    "max_items_per_company": 10,
+    "min_content_length": 100
+  },
+  "data_collection": {
+    "max_age_days": 7,
+    "retry_attempts": 3,
+    "timeout_seconds": 30,
+    "user_agent": "MarketResearchBot/1.0"
+  },
+  "filtering": {
+    "exclude_keywords": [
+      "advertisement",
+      "sponsored",
+      "clickbait"
+    ],
+    "min_word_count": 50,
+    "duplicate_threshold": 0.8
+  }
+}
